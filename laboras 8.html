@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="print.css" media="print">
+    <script src="https://kit.fontawesome.com/81fe622e88.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sveiki</title>
 </head>
 <body>
-    <header>
-        <h1>Mano Svetaine</h1>
-        <nav>
-        <ul>
-            <li><a href="#about">Apie</a></li>
-            <li><a href="#resume">Aprašymas</a></li>
-            <li><a href="#port">Portfolio</a></li>
-            <li><a href="#paslaugos">Paslaugos</a></li>
-        </ul>
-    </nav>
+    <header id="header">
+        <div class="flex">
+            <img class="circular--square" alt="profile" src="images/profile.jpg">
+            <h1>Mano Svetaine</h1>
+            <div class="social">
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter soc-icon" style="color: #ffffff;"></i></a>
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f soc-icon" style="color: #ffffff;"></i></a>
+            <a href="https://instagram.com/"><i class="fa-brands fa-instagram soc-icon" style="color: #ffffff;"></i></a>
+            <a href="https://skype.com/"><i class="fa-brands fa-skype soc-icon" style="color: #ffffff;"></i></a>
+            <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin-in soc-icon" style="color: #ffffff;"></i></a>
+            </div>
+            <nav class="meniu">
+                <ul>
+                    <li><a href="#about"><i class="fa-regular fa-user fa-lg icons"></i>Apie</a></li>
+                    <li><a href="#resume"><i class="fa-regular fa-file fa-lg icons"></i>Aprašymas</a></li>
+                    <li><a href="#port"><i class="fa-regular fa-hard-drive fa-lg icons"></i>Portfolio</a></li>
+                    <li><a href="#paslaugos"><i class="fa-solid fa-laptop fa-lg icons"></i>Paslaugos</a></li>
+                </ul>
+            </nav>
+    </div>
     </header>
-
-    <section id="about">
+    <div class="box"></div>
+    <div id="pagrindas">
+    <section id="about" class="about">
         <h2>Apie</h2>
         <p>Justas Paplauskas EIF-22</p>
         <p>Kita informacija apie mane</p>
         <img src="images/Herbas.png" alt="Nuotrauka" width="400" height="400">
     </section>
 
-    <section id="resume">
+    <section id="resume" class="resume">
         <div>
         <h2>Aprašymas</h2>
         <p>Mano darbo patirtis ir resume</p>
@@ -39,22 +51,21 @@
     </div>
     </section>
 
-    <section id="port">
+    <section id="port" class="port">
         <h2>Portfolio</h2>
         <p>Mano portfolio</p>
         <img src="images/porto.jpg" alt="Nuotrauka" width="400" height="340">
     </section>
 
-    <section id="paslaugos">
+    <section id="paslaugos" class="paslaugos">
         <div>
         <h2>Paslaugos</h2>
-        <video width="320" height="240" controls>
-            <source src="video/gordon.mp4" type="video/mp4">
-        </video>
-        <div class="container">
-            <iframe src="https://www.youtube.com/embed/qRODjitiKP8?si=H9MOa7mqABMUpgRl" 
-            frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
+            <video width="320" height="240" controls>
+                <source src="video/gordon.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <iframe src="https://www.youtube.com/embed/qRODjitiKP8?si=H9MOa7mqABMUpgRl" allowfullscreen class="video"></iframe>
+            </div>
 
         <audio controls>
             <source src="audio/music.mp3" type="audio/ogg">
@@ -62,6 +73,6 @@
         </div>
     
         </section>
-
+    </div>
 </body>
 </html>
