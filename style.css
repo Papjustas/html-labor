@@ -100,7 +100,7 @@ body {
 }
 
 .about {
-  padding: 60px 30px;
+  padding: 90px 30px;
 }
 .resume {
   padding: 60px 30px;
@@ -125,6 +125,9 @@ ul {
 
 h2 {
   font-size: 30px;
+  border-bottom: 3px solid black;
+  display: inline-block;
+  
 }
 a {
   font-size: 22px;
@@ -144,4 +147,24 @@ a {
     left: 0;
     width: 40%;
     height: 60%;
+}
+
+svg {
+  display: block;
+  position: absolute;
+  
+  .path {
+    stroke-dasharray: 320;
+    stroke-dashoffset: 0;
+    animation: dash 1s linear;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 320;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
 }
