@@ -94,6 +94,51 @@
         <img src="images/porto.jpg" alt="Nuotrauka" width="400" height="340">
     </section>
 
+    <section class="port">
+
+        <form id="kontak">
+
+        <label for="vardas">Vardas:</label>
+        <input type="text" id="vardas" required><br><br>
+
+        <label for="pavarde">Pavarde:</label>
+        <input type="text" id="pavarde" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" required><br><br>
+
+        <label for="telefonas">Telefono numeris:</label>
+        <input type="text" id="telefonas" required><br><br>
+
+        <label for="adresas">Adresas:</label>
+        <input type="text" id="adresas" required><br><br>
+
+        <label for="pozymiai1">Kiek jums metu:</label>
+        <input type="number" id="pozymiai1" required><br><br>
+
+        <label for="pozymiai2">Kuriam semestre studijuojat:</label>
+        <input type="number" id="pozymiai2" required><br><br>
+
+        <label for="pozymiai3">Kiek metu liko studijuot:</label>
+        <input type="number" id="pozymiai3" required><br><br>
+
+        <label for="pozymiai4">Auksciausias pazymys:</label>
+        <input type="number" id="pozymiai4" required><br><br>
+
+        <label for="pozymiai5">Kiek sunu turite:</label>
+        <input type="number" id="pozymiai5" required><br><br>
+
+        <button type="button" onclick="saugotiDuomenis()">Saugoti duomenis</button>
+    </form>
+
+    <div id="contactInfo"></div>
+    <div id="average"></div>
+
+
+    <script src="script.js"></script>
+
+    </section>
+
     <section id="paslaugos" class="paslaugos">
         <div>
         <h2>Paslaugos</h2>
@@ -108,8 +153,9 @@
             <div class="container">
                 <iframe src="https://www.youtube.com/embed/qRODjitiKP8?si=H9MOa7mqABMUpgRl" allowfullscreen class="video"></iframe>
             </div>
-            
+
             <div id="laikrodis"></div>
+
             <script src="script.js"></script>
 
         <audio controls>
